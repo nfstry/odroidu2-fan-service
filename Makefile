@@ -9,5 +9,5 @@ usi:
 	sudo cp ubuntu_service/odroidu2-fan-service.conf /etc/init
 	
 install:
-	mkdir -p $(DESTDIR)
+	mkdir -p $(DESTDIR)/bin/
 	cp -f odroidu2-fan $(DESTDIR)/bin/
