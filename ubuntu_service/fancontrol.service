@@ -1,0 +1,15 @@
+[Unit]
+Description=Fan Control Service
+Before=graphical.target 
+After=docker.service
+ 
+
+[Service]
+Type=notify
+ExecStart=/bin/odroidu2-fan 
+Restart=always
+RestartSec=2
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target
