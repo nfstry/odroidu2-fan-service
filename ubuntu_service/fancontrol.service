@@ -5,7 +5,7 @@ After=docker.service
  
 
 [Service]
-Type=notify
+Type=simple
 ExecStart=/bin/odroidu2-fan 
 Restart=always
 RestartSec=2
