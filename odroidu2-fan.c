@@ -42,12 +42,12 @@ void u2_service(void) {
 
 int main(int argc, char *argv[]) {
 
-	if(fork() == 0) {
-		while(1) {
-			sleep(PROBES_PER_SECOND);
-			u2_service();
-		}
+	
+	while(1) {
+		sleep(PROBES_PER_SECOND);
+		u2_service();
 	}
+
 
 	return 0;
 }
