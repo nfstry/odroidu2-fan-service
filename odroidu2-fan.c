@@ -25,7 +25,7 @@ void u2_service(void) {
 	 * we'll set our max speed temp as 80C
 	 */
 
-	int target_pwm_value = 255 * (temperature-40) / 40;
+	int target_pwm_value = 255 * (temperature - 50) / (80 - 50);
 
 	if(target_pwm_value <= 0)
 		target_pwm_value = 0;
