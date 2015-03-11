@@ -10,6 +10,6 @@ usi:
 	
 install:
 	mkdir -p $(DESTDIR)/bin/
-	mkdir -p $(DESTDIR)/etc/systemd/system/
+	mkdir -p $(DESTDIR)/usr/lib/systemd/system/
 	cp -f odroidu2-fan $(DESTDIR)/bin/
-	cp -f ubuntu_service/fancontrol.service  $(DESTDIR)/etc/systemd/system/
+	cp -f ubuntu_service/fancontrol.service  $(DESTDIR)/usr/lib/systemd/system/
